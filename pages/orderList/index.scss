@@ -49,6 +49,15 @@
 			border-radius: 10upx;
 			margin:20upx 0;
 			padding:10upx 20upx;
+			position:relative;
+			.icon{
+				position: absolute;
+				top:50%;
+				right:20upx;
+				width:30upx;
+				height:30upx;
+				margin-top:-15upx;
+			}
 		}
 		// 订单item
 		.item-order{

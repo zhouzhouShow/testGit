@@ -44,7 +44,7 @@
 			</view>
 			<view class="search">
 				<input type="text" placeholder="单号/备注/货号/名称/电话/姓名">
-				<text class="iconfont iconsousuo"></text>
+				<text class="iconfont iconsousuo icon"></text>
 			</view>
 			<view class="item-order">
 				<view class="item-content">
