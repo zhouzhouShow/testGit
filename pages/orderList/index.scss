@@ -1,0 +1,112 @@
+.orderList{
+		padding:20upx 20upx 20upx 40upx;
+		.nav1{
+			display:flex;
+			font-size:30upx;
+			justify-content:space-around;
+			align-items:center;
+			margin-bottom:30upx;
+			.list-box{
+				display: flex;
+				justify-content: space-around;
+				background:#F2F2F2;
+				border-radius: 10upx;
+				padding:10upx 0 5upx 0;
+				width:75%;
+				.item-box{
+					display: flex;
+					flex-direction: column;
+				}
+			}
+			.withdraw-btn{
+				background: #FFCC33;
+				border:1px solid #000;
+				color: #000;
+				width:20%;
+				padding:0;
+				height:70upx;
+				font-size: 26upx;
+				line-height: 70upx;
+				
+			}
+		}
+		.order-box{
+			padding:0 20upx;
+			.nav-title{
+				padding:0 10upx 20upx 10upx;
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #797979;
+				font-size: 30upx;
+			}
+			.active{
+				color: #3399CC;
+			}
+		}
+		.search{
+			font-size: 30upx;
+			background: #F2F2F2;
+			border-radius: 10upx;
+			margin:20upx 0;
+			padding:10upx 20upx;
+		}
+		// 订单item
+		.item-order{
+			font-size:30upx;
+			border-bottom:1px solid #E4E4E4;
+			margin-bottom:30upx;
+			padding-bottom:20upx;
+			.item-content{
+				background: #F2F2F2;
+				border-radius: 10upx;
+				padding:6upx 20upx 30upx 20upx;
+				border:1px solid #E4E4E4;
+			}
+			.item-number{
+				font-size: 24upx;
+				display: flex;
+				justify-content: space-between;
+				.status{
+					color: #FFCC33;
+				}
+			}
+			.item-info{
+				display:flex;
+				margin-top: 20upx;
+				.item-img{
+					width:104upx;
+					height:98upx;
+				}
+				.item-text{
+					width:80%;
+					padding-left:20upx;
+					.item-price{
+						text-align: right;
+					}
+				}
+				
+			}
+			.item-express{
+				display: flex;
+				justify-content: space-between;
+				font-size: 24upx;
+			}
+			.operation{
+				display: flex;
+				justify-content:flex-end;
+				margin-top:20upx;
+				text{
+					background: #FFCC33;
+					color:#000;
+					font-size: 26upx;
+					width:210upx;
+					height:80upx;
+					text-align: center;;
+					line-height: 80upx;
+					margin-left:20upx;
+					border-radius: 10upx;
+				}
+			}
+		}
+		
+	}

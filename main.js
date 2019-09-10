@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App'
-import Vuex from 'vuex'
+// import Vuex from 'vuex'
 
-Vue.use(VueX)
+// Vue.use(VueX)
 
 Vue.config.productionTip = false
 

@@ -1,0 +1,114 @@
+	$fontBlue:#346DF9;
+	.order-info-box{
+		display: flex;
+		align-items:center;
+		margin-bottom:20upx;
+		.user-img{
+			width:130upx;
+			height:130upx;
+			margin-right:20upx;
+		}
+		.order-info{
+			width:80%;
+			.user-name{
+				display: flex;
+				justify-content: space-between;
+				color:$fontBlue;
+				.user{
+					font-size: 30upx;
+					font-weight: bold;
+				}
+				.price{
+					font-size: 26upx;
+					font-weight: bold;
+				}
+			}
+			.order-name{
+				font-size: 28upx;
+				color: #4B4B4B;
+			}
+			.order-des{
+				font-size: 24upx;
+			}
+		}
+	}
+	.orderDetail{
+		padding:20upx 40upx;
+	}
+	.order-img:after{
+		content: '';
+		width:32%;
+		height:0;
+		margin-bottom:20upx;
+	  }
+	.order-img{
+		display: flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		.imgs{
+			width:32%;
+			height:160upx;
+			margin-bottom:20upx;
+			// margin-right:20upx;
+		}
+	}
+	.order-details{
+		padding:0 50upx;
+		.row{
+			white-space: nowrap;
+			 font-size: 24upx;
+			 color: #868686;
+			 display: flex;
+			 justify-content: space-between;
+			 line-height:38upx;
+			 text:nth-child(1){
+				 width:60%;
+			 }
+			 text:nth-child(2){
+				 width:40%;
+			 }
+		}
+		.refunded{
+			margin-top:6upx;
+			padding-top:6upx;
+			border-top:1px solid #D7D7D7;
+			font-size: 24upx;
+			line-height:38upx;
+			display: flex;
+			flex-direction: column;
+			color: #868686;
+		}
+	}
+	.refound-box{
+		.picker{
+			border:1px solid #000;
+			border-radius: 12upx;
+			text-align: center;
+			padding:20upx 0; 
+			font-size: 30upx;
+		}
+		.logistics-num{
+			@extend .picker;
+			margin-top:20upx;
+		}
+	}
+	.seller-info{
+		background: #F2F2F2;
+		padding:20upx 30upx;
+		font-size: 28upx;
+		color: #868686;
+		margin-top:30upx;
+	}
+	.operation{
+		display:flex;
+		justify-content:space-around;
+		margin-top:40upx;
+		button{
+			background: #FFCC33;
+			color:#000;
+			height:80upx;
+			line-height: 80upx;
+			font-size: 26upx;
+			width:210upx;
+		}
+	}
