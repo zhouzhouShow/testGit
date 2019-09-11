@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "珠宝"
+				"navigationBarTitleText": "全球珠宝仓"
 			}
 		},
 		{
@@ -55,25 +55,38 @@
 				"navigationBarTitleText":"设置退货地址"
 			}
         }
+        ,{
+            "path" : "pages/paying/paying",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodDetail/goodDetail",
+            "style" : {}
+        }
     ],
 	"tabBar":{
+		"selectedColor":"#2B69F8",
 		"list":[
 			{
-				"pagePath":"pages/sreach/sreach",
+				"text":"首页",
+				"pagePath":"pages/index/index",
 				"iconPath":"static/img/icon2.png",
 				"selectedIconPath":"static/img/icon2_hover.png"
 			},
 			{
-				"pagePath":"pages/index/index",
+				"text":"上传",
+				"pagePath":"pages/sreach/sreach",
 				"iconPath":"static/img/icon1.png",
 				"selectedIconPath":"static/img/icon1_hover.png"
 			},
 			{
+				"text":"消息",
 				"pagePath":"pages/sreach/sreach",
 				"iconPath":"static/img/icon2.png",
 				"selectedIconPath":"static/img/icon2_hover.png"
 			},
 			{
+				"text":"个人中心",
 				"pagePath":"pages/sreach/sreach",
 				"iconPath":"static/img/icon2.png",
 				"selectedIconPath":"static/img/icon2_hover.png"
@@ -83,7 +96,7 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "珠宝",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#fff",
 		"backgroundColor": "#F8F8F8"
 	}
 }
