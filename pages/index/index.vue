@@ -31,7 +31,7 @@
 			<!-- 自定义指示点 -->
 			<Dot class="dot" :current="current" :list="bannerList" ></Dot>
 			<view class="icon-hot">HOT</view>
-			<view class="search">
+			<view class="search" @click="navigate('/pages/sreach/sreach')">
 				<!-- <input type="text" placeholder="单号/备注/货号/名称/电话/姓名"> -->
 				<text class="sreach-tips">搜索需要的资源?</text>
 				<text class="iconfont iconsousuo icon"></text>
@@ -51,18 +51,7 @@
 						</view>
 						<view class="right-type-box">
 							<scroll-view scroll-x="true"  show-scrollbar="false">
-								<text>戒指</text>
-								<text>手链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>耳饰</text>
+								<text @click="" :class="" v-for="(item,index) in classifyList" :key="index">耳饰</text>
 							</scroll-view>
 						</view>
 					</view>
@@ -74,18 +63,7 @@
 						</view>
 						<view class="right-type-box">
 							<scroll-view scroll-x="true"  show-scrollbar="false">
-								<text>戒指</text>
-								<text>手链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>耳饰</text>
+								<text v-for="item in classifyList" :key="item">项链</text>
 							</scroll-view>
 						</view>
 					</view>
@@ -97,18 +75,7 @@
 						</view>
 						<view class="right-type-box">
 							<scroll-view scroll-x="true"  show-scrollbar="false">
-								<text>戒指</text>
-								<text>手链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>项链</text>
-								<text>耳饰</text>
+								<text v-for="item in classifyList" :key="item">戒指</text>
 							</scroll-view>
 						</view>
 					</view>
@@ -156,7 +123,7 @@
 							<button class="unfold">加入仓库</button>
 							<button class="info">详情</button>
 						</view>
-						<button class="hideMore">收起</button>
+						<button class="hideMore" @click="showMore">收起</button>
 					</view>
 				</view>
 			</view>
@@ -174,6 +141,7 @@
 				current:4,
 				status:0,
 				imgBox:[1,2,3,4,5,6,7,8,9],
+				classifyList:[1,2,3,4,5,6,7,8,9,10,12],
 				item:{
 					isShowMore:false
 				}
@@ -186,6 +154,16 @@
 			Dot
 		},
 		methods: {
+			toSreach(){
+				
+			},
+			navigate(route){
+				if(route){
+					uni.navigateTo({
+						url:route
+					})
+				}
+			},
 			change(e) {
 				this.current = e.detail.current;
 			},

@@ -198,6 +198,9 @@
 							color: #999;
 							margin-right:20upx;
 						}
+						.active{
+							color: #2F69F8;
+						}
 					}
 				}
 			}
@@ -323,7 +326,8 @@
 						right:0;
 						top:10upx;
 						width:158upx;
-						height:66upx;
+						height:44upx;
+						line-height:44upx;
 						font-size: 25upx;
 						border-radius:10upx;
 						background: #FFB800;

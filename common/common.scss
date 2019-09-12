@@ -1,0 +1,12 @@
+$themeColor:#2B69F8;//主题色
+.common_btn{
+	background:#2F69F8;
+}
+
+@mixin borderRadius10(){
+	border-radius: 10upx;
+}
+@mixin setDisplay(){
+	display:flex;
+	align-items:center
+}

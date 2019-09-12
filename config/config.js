@@ -2,15 +2,9 @@
 
 let isDev = process.env.NODE_ENV === 'development';
 
-// export const DO_MAIN = isDev ? 'https://wostar.chlvip.cn' :'https://wostar.chlvip.cn'
+export const DO_MAIN = isDev ? 'http://zb.p4t.cn' : 'https://m.wostars.cn'
 
-// export const DO_MAIN = isDev ? 'https://wostar.chlvip.cn' : 'https://m.wostars.cn'
-
-export const DO_MAIN = isDev ? 'https://m.wostars.cn' : 'https://m.wostars.cn'
-
-export const BASE_URL = DO_MAIN+'/api'
-
-export const WEB_URL = DO_MAIN + '/mob'
+export const BASE_URL = DO_MAIN
 
 export const STATE_OK = 'ok'
 
@@ -78,16 +72,5 @@ export const withdrawStatus = {
   FAILED: 'FAILED' // 提现失败
 }
 
-export const MER_TYPEID = 8
-export const QUESTIONID = 14 // 问题主分类
-export const GOODSBASEID = 2
-export const PACKAGEID = 7   // 套餐sysClassId
-export const QUESTION_ID = 14   //问题主类型
 
-export const FREE_ID = 6 // 免费领sysClassId
-export const BASE_SERVICE_ID=5 //基础服务sysClassId
-
-export const MAP_KEY = '05bf82c846e16128e5dc371467095ea1'
-
-export const VERIFICATION_KEY = 'VERIFICATION_KEY'   // 核销key
 
